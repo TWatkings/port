@@ -1,0 +1,19 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "my first portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TWatkings/port.git"
+  },
+  "author": "thomas watkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TWatkings/port/issues"
+  },
+  "homepage": "https://github.com/TWatkings/port#readme"
+}
