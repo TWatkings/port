@@ -25,25 +25,26 @@
       </div>
     </nav>
     <section class="pt-5 w-50 mx-auto">
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Name</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="mb-5">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
-        </div>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
+      <form id="contact-form" class="row g-3" action="mail.php" method="POST">
+          <div class="col-md-6">
+              <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
+              <label for="email" class="visually-hidden">Your email</label>
+          </div>
+          <div class="col-md-6">
+              <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+              <label for="name" class="visually-hidden">Your name</label>
+          </div>
+          <div class="mb-5">
+              <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your message"></textarea>
+              <label for="message" class="visually-hidden">Your message</label>
+          </div>
+          <div class="text-center text-md-left">
+              <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+          <div class="status"></div>
       </form>
-    </section>
+  </section>
+  
       <footer class="bg-white text-center pt-5">
         <section>
           <a class="footer pt-5 pb-5" href="index.html">
