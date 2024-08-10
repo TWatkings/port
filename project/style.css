@@ -1,28 +1,22 @@
 .custom-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .custom-content .container-custom {
+    width: 1000px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure it takes up the full height of the viewport */
-    background-color: #f0f0f0; /* Example background */
-}
-
-.container-custom {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* This will ensure the items wrap */
-    gap: 20px; /* Space between cards */
-    max-width: 1000px; /* Set a maximum width */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-.card-custom {
-    flex: 1 1 300px; /* Grow and shrink to 300px width */
-    max-width: 300px; /* Max width of each card */
-    background-color: #000; /* Your existing styles */
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5); /* Your existing styles */
-    position: relative; /* Your existing styles */
-}
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .custom-content .card-custom {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  }
   
   .custom-content .card-custom .imgBx {
     position: absolute;
