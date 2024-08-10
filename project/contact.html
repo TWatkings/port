@@ -25,24 +25,24 @@
       </div>
     </nav>
     <section class="pt-5 w-50 mx-auto">
-      <form id="contact-form" class="row g-3" action=mail.php method="POST">
-          <div class="col-md-6">
-              <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
-              <label for="email" class="visually-hidden">Your email</label>
-          </div>
-          <div class="col-md-6">
-              <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
-              <label for="name" class="visually-hidden">Your name</label>
-          </div>
-          <div class="mb-5">
-              <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your message"></textarea>
-              <label for="message" class="visually-hidden">Your message</label>
-          </div>
-          <div class="text-center text-md-left">
-              <button type="submit" class="btn btn-primary">Send</button>
-          </div>
-          <div class="status"></div>
-      </form>
+      <form id="contact-form" class="row g-3" action="mailto:twa7kins@icloud.com" method="POST" enctype="text/plain">
+        <div class="col-md-6">
+            <input type="text" id="email" name="email" class="form-control" placeholder="Your email" required>
+            <label for="email" class="visually-hidden">Your email</label>
+        </div>
+        <div class="col-md-6">
+            <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+            <label for="name" class="visually-hidden">Your name</label>
+        </div>
+        <div class="mb-5">
+            <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your message" required></textarea>
+            <label for="message" class="visually-hidden">Your message</label>
+        </div>
+        <div class="text-center text-md-left">
+            <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+    
   </section>
   
       <footer class="bg-white text-center pt-5">
