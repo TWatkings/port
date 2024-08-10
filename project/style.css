@@ -1,6 +1,10 @@
 .custom-content {
     background-color: #f0f0f0;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes up the full height of the viewport */
   }
   
   .custom-content .container-custom {
