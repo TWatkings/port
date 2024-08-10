@@ -90,21 +90,21 @@ body {
 
 
 
-/* .card {
-    
+.card {
+    height: 300px; /* Adjust this height as needed */
 } 
 
 .card-img-custom {
-    height: 200px; 
+    height: 200px; /* Adjust this height as needed */
     object-fit: cover;
-    width: 100%; 
+    width: 100%; /* Ensure the image takes the full width of the card */
 }
 
 @media (max-width: 768px) {
     .card-img-custom {
-        height: 150px; 
+        height: 150px; /* Smaller height for smaller screens */
     }
-} */
+}
 
 
 
