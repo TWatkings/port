@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bootstrap Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure this links to your CSS file -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white navbar-white">
@@ -25,79 +26,68 @@
       </div>
     </nav>
 
-    <section class="pt-5"> 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+    <section class="pt-5">
+      <div class="container-custom">
         <div class="col">
-          <div class="card h-100">
-            <div class="card-header bg-transparent border-success">To-Do List app</div>
-            <img src="images/7276921.png" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">To-Do</h5> 
-              <p class="card-text">This is a to-do list app. Its allow you to keep track of all the important things. You can add as well as delete things.</p>
+          <div class="card-custom">
+            <div class="imgBx">
+              <img src="images/7276921.png" alt="...">
             </div>
-            <div class="card-footer">
-              <small class="text-muted">check it out <a href="#">Here</a></small>
+            <div class="card-body">
+              <h5 class="card-title">To-Do</h5> 
+              <p class="card-text">This is a to-do list app. It allows you to keep track of all the important things. You can add and delete items.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <div class="card-header bg-transparent border-success">Pokemon deck</div>
-            <img src="images/jeremy-bezanger-0L03791QgQc-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-custom">
+            <div class="imgBx">
+              <img src="images/jeremy-bezanger-0L03791QgQc-unsplash.jpg" alt="...">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Pokedex</h5>
-              <p class="card-text">This app allows you to see all the pokemon in the world. it show the types as well as the abllity</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Cherk it out <a href="#"> Here</a></small>
+              <p class="card-text">This app allows you to see all the Pokémon in the world. It shows the types and abilities.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <div class="card-header bg-transparent border-success">Header</div>
-            <img src="images/poke.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">coming soon</h5>
-              <p class="card-text">A movie app using react and api for hosting</p>
+          <div class="card-custom">
+            <div class="imgBx">
+              <img src="images/poke.png" alt="...">
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div class="card-body">
+              <h5 class="card-title">Coming Soon</h5>
+              <p class="card-text">A movie app using React and an API for hosting.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
     <footer class="bg-white text-center pt-5">
       <section>
         <a class="footer pt-5 pb-5" href="index.html">
           <img src="https://cdn-icons-png.flaticon.com/512/8090/8090052.png" alt="Bootstrap" width="60" height="48">
         </a>
-        <h3 class="footer-text pt-5 pb-5">Living & Learning <br>
-            one day at a time.</h3>
+        <h3 class="footer-text pt-5 pb-5">Living & Learning <br> one day at a time.</h3>
       </section>
-       <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
-        <img src="images/twitter.svg" alt="Bootstrap" width="60" height="48">
-      </a>
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in">
-        <img src="images/linkedin.svg" alt="" width="60" height="48">
-      </a>
-       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-        <img src="images/github.svg" alt="" width="60" height="48">
-      </a>
-    </section>
+      <div class="container p-4">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+            <img src="images/twitter.svg" alt="Bootstrap" width="60" height="48">
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+            <img src="images/linkedin.svg" alt="Bootstrap" width="60" height="48">
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+            <img src="images/github.svg" alt="Bootstrap" width="60" height="48">
+          </a>
+        </section>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
