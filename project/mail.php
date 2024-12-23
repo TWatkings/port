@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Input exceeds allowed length.";
         exit;
     }
-
+        // my email
     $recipient = "twa7kins@icloud.com";
     $subject = "New contact from $name";
     $email_content = "Name: $name\nEmail: $email\n\nMessage:\n$message\n";

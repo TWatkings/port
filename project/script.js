@@ -13,8 +13,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   toggleButton.textContent = 'Toggle Dark Mode';
   toggleButton.className = 'btn btn-dark';
   toggleButton.style.position = 'fixed';
-  toggleButton.style.bottom = '10px';
-  toggleButton.style.right = '10px';
+  toggleButton.style.bottom = '11px';
+  toggleButton.style.right = '11px';
   document.body.appendChild(toggleButton);
   
   toggleButton.addEventListener('click', () => {
