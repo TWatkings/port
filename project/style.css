@@ -167,7 +167,6 @@ body {
 .card-custom {
   width: 300px;
   background: #000;
-  /* color: #f0f0f0; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
@@ -186,6 +185,20 @@ body {
 
   .card-custom {
     width: 90%; /* Make the cards take most of the screen width */
+  }
+}
+
+/* Ensure the image scales properly on all screen sizes */
+.responsive-img {
+  width: 100%; /* Make the image take the full width of its container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 760px; /* Set a maximum width for larger screens */
+}
+
+/* Optional: Adjust container padding on smaller screens */
+@media (max-width: 768px) {
+  .img-container {
+    padding: 10px; /* Reduce padding on mobile devices */
   }
 }
 
